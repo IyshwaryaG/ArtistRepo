@@ -6,6 +6,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ArtistRepository extends JpaRepository<Artist, Long> {
-List<Artist> Artist
+Artist getArtistById(long id){
+  Select * from Artist where id = ?
   
 }
